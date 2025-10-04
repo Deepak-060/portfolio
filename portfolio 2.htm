@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Verma | Portfolio</title>
+    <style>
+        /* === Animated Dark Green Gradient Background === */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(270deg, #0f0f0f, #004d40, #00c853);
+            background-size: 600% 600%;
+            animation: gradientMove 10s ease infinite;
+            color: #e0e0e0;
+            scroll-behavior: smooth;
+        }
+
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Hero Section */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        header img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #00e676; /* Bright green border */
+            box-shadow: 0 4px 15px rgba(0, 230, 118, 0.6);
+        }
+
+        .hero-text {
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #00e676; /* Neon green text */
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #b9f6ca;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.85);
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+        }
+
+        h2 {
+            text-align: center;
+            color: #69f0ae;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background: #1b5e20;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            background: #00c853;
+            box-shadow: 0 4px 15px rgba(0, 255, 128, 0.7);
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #1b5e20;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 255, 128, 0.6);
+        }
+
+        /* Contact Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #00e676;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #121212;
+            color: #fff;
+        }
+
+        button {
+            background: #00e676;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #00c853;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            section {
+                margin: 20px;
+            }
+        }
+        /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: #333;
+    padding: 15px;
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar.open .nav-links {
+    display: flex;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contect">Contact Me</a></li>
+    </ul>
+  </nav>
+    <!-- Hero Section -->
+    <header id="Home">
+        <img src="https://i.pinimg.com/736x/c0/99/15/c099159849a5f3399e05335f2c56adca.jpg">
+        <div class="hero-text">
+            <h1>Deepak Verma</h1>
+            <p>Welcome to my portfolio 🚀</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="About">
+        <h2>About Me</h2>
+        <p>Hello! I'm Deepak Verma, a passionate learner exploring web development. I love creating simple and beautiful websites using HTML and CSS. I enjoy experimenting with colors, gradients, and making my pages look unique!</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Design</div>
+            <div class="skill">ChatGPT</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/200x120" alt="Project 1">
+                <h3>Project One</h3>
+                <p>My first basic project using HTML and CSS.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/200x120" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>A dark-themed landing page with green gradient.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contect">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+</body>
+</html>
